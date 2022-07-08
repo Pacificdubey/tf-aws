@@ -3,6 +3,5 @@ terraform {
     bucket = "tf-ts-s3-19159"
     key    = "terraform.tstate"
     region = "us-east-1"
-    #dynamodb_table = "tf-lock-table"
   }
 }
