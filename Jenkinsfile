@@ -23,7 +23,7 @@ pipeline {
         }
         stage('terraform Init') {
             steps{
-                sh 'terraform init -migrate-state'
+                sh 'terraform init --auto-approve'
             }
         }
         stage('terraform apply') {
