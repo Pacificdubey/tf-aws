@@ -4,6 +4,6 @@ resource "aws_instance" "tf-aws-ec2" {
    instance_type =  "t2.micro"
 
    tags = {
-           Name = "My EC2"
+           Name = "My Web EC2"
    }
 }
