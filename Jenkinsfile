@@ -23,7 +23,7 @@ pipeline {
         }
         stage('terraform Init') {
             steps{
-                sh 'terraform init --auto-approve'
+                sh 'terraform init -force-copy'
             }
         }
         stage('terraform apply') {
