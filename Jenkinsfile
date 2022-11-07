@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Git checkout') {
            steps{
-             checkout scm
+              checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/suraj11198/Terraform-Blog.git']]])
             }
         }
         stage('terraform format check') {
